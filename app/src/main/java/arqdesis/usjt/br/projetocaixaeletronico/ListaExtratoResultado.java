@@ -9,11 +9,19 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import util.StatusTracker;
+import util.Utils;
+
 public class ListaExtratoResultado extends AppCompatActivity {
     public static final String RESULTADO = "br.usjt.arqdesis.ProjetoCaixaEletronico.resultado";
+    private String mActivityName;
+    private TextView mStatusView;
+    private TextView mStatusAllView;
+    private StatusTracker mStatusTracker = StatusTracker.getInstance();
     ArrayList<String> lista;
     Activity atividade;
     @Override
@@ -35,7 +43,11 @@ public class ListaExtratoResultado extends AppCompatActivity {
 
             }
         });
+        mActivityName = getString(R.string.activity_a);
+        mStatusTracker.setStatus(mActivityName, getString(R.string.on_create));
+        Utils.printStatus(mStatusView, mStatusAllView);
     }
+
     public ArrayList<String> buscarExtrato(String chave){
         ArrayList<String> lista = geraListaExtrato();
         if (chave == null || chave.length() == 0){
@@ -75,4 +87,50 @@ public class ListaExtratoResultado extends AppCompatActivity {
         lista.add("449486");
         return lista;
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        mStatusTracker.setStatus(mActivityName, getString(R.string.on_start));
+        Utils.printStatus(mStatusView, mStatusAllView);
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        mStatusTracker.setStatus(mActivityName, getString(R.string.on_restart));
+        Utils.printStatus(mStatusView, mStatusAllView);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mStatusTracker.setStatus(mActivityName, getString(R.string.on_resume));
+        Utils.printStatus(mStatusView, mStatusAllView);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mStatusTracker.setStatus(mActivityName, getString(R.string.on_pause));
+        Utils.printStatus(mStatusView, mStatusAllView);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mStatusTracker.setStatus(mActivityName, getString(R.string.on_stop));
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mStatusTracker.setStatus(mActivityName, getString(R.string.on_destroy));
+        mStatusTracker.clear();
+    }
+
+    public void finishActivityA(View v) {
+        ListaExtratoResultado.this.finish();
+    }
+
 }
