@@ -1,4 +1,4 @@
-package arqdesis.usjt.br.projetocaixaeletronico;
+package arqdesis.usjt.br.projetocaixaeletronico.Controller;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,10 +7,11 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import util.StatusTracker;
-import util.Utils;
+import arqdesis.usjt.br.projetocaixaeletronico.R;
+import arqdesis.usjt.br.projetocaixaeletronico.util.StatusTracker;
+import arqdesis.usjt.br.projetocaixaeletronico.util.Utils;
 
-public class ListaExtrato extends AppCompatActivity {
+public class ListaExtratoActivity extends AppCompatActivity {
     private EditText data;
     private String mActivityName;
     private TextView mStatusView;
@@ -30,7 +31,7 @@ public class ListaExtrato extends AppCompatActivity {
 
 
     public void buscarExtrato(View view){
-        Intent intent = new Intent(this, ListaExtratoResultado.class);
+        Intent intent = new Intent(this, ListaExtratoResultadoActivity.class);
         String chave = data.getText().toString();
         intent.putExtra(CHAVE, chave);
         startActivity(intent);
@@ -78,7 +79,7 @@ public class ListaExtrato extends AppCompatActivity {
     }
 
     public void finishActivityA(View v) {
-        ListaExtrato.this.finish();
+        ListaExtratoActivity.this.finish();
     }
 
 }

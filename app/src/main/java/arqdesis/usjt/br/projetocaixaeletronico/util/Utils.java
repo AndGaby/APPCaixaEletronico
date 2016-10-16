@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package util;
+package arqdesis.usjt.br.projetocaixaeletronico.util;
 
 import android.os.Handler;
 import android.widget.TextView;
@@ -23,7 +23,7 @@ import java.util.List;
 
 public class Utils {
 
-    private static util.StatusTracker mStatusTracker = util.StatusTracker.getInstance();
+    private static StatusTracker mStatusTracker = StatusTracker.getInstance();
 
     /**
      * Helper method to print out the lifecycle state of each Activity.  Note this has

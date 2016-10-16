@@ -15,6 +15,9 @@
     <string name="text_button_transferencia">Tranferencia</string>
     <string name="text_button_debito">Debito</string>
     <string name="text_button_busca_resultado">Buscar</string>
+    <string name="text_button_outros_valores">Outros Valores</string>
+    <string name="text_button_confirmar">Confirmar</string>
+
 
     <string name="lifecycle_method_list">Lifecycle Method List</string>
     <string name="activity_status">Activity Status</string>
@@ -63,9 +66,6 @@
     <string name="title_activity_activity_c">ActivityC</string>
     <string name="title_activity_dialog">DialogActivity</string>
     <string name="title_activity_">Activity Lifecycle</string>
-
-
-
 
 
 </resources>

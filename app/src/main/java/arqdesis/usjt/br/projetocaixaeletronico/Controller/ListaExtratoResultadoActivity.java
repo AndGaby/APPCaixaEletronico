@@ -1,4 +1,4 @@
-package arqdesis.usjt.br.projetocaixaeletronico;
+package arqdesis.usjt.br.projetocaixaeletronico.Controller;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,16 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import util.StatusTracker;
-import util.Utils;
+import arqdesis.usjt.br.projetocaixaeletronico.R;
+import arqdesis.usjt.br.projetocaixaeletronico.util.StatusTracker;
+import arqdesis.usjt.br.projetocaixaeletronico.util.Utils;
 
-public class ListaExtratoResultado extends AppCompatActivity {
+public class ListaExtratoResultadoActivity extends AppCompatActivity {
     public static final String RESULTADO = "br.usjt.arqdesis.ProjetoCaixaEletronico.resultado";
     private String mActivityName;
     private TextView mStatusView;
@@ -130,7 +130,7 @@ public class ListaExtratoResultado extends AppCompatActivity {
     }
 
     public void finishActivityA(View v) {
-        ListaExtratoResultado.this.finish();
+        ListaExtratoResultadoActivity.this.finish();
     }
 
 }

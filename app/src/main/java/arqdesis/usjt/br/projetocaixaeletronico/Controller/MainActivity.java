@@ -1,9 +1,7 @@
-package arqdesis.usjt.br.projetocaixaeletronico;
+package arqdesis.usjt.br.projetocaixaeletronico.Controller;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,8 +13,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import util.StatusTracker;
-import util.Utils;
+import arqdesis.usjt.br.projetocaixaeletronico.R;
+import arqdesis.usjt.br.projetocaixaeletronico.util.StatusTracker;
+import arqdesis.usjt.br.projetocaixaeletronico.util.Utils;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -86,16 +85,19 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_saldo) {
-
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_extrato) {
-            Intent intent = new Intent(this, ListaExtrato.class);
+            Intent intent = new Intent(this, ListaExtratoActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_debito) {
 
         } else if (id == R.id.nav_saque) {
-
+            Intent intent = new Intent(this, SaqueActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_transferencia) {
-
+            Intent intent = new Intent(this, TransferenciaActivity.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

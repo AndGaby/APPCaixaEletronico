@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package util;
+package arqdesis.usjt.br.projetocaixaeletronico.util;
 
 import java.util.*;
 
