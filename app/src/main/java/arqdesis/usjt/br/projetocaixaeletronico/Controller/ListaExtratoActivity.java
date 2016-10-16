@@ -17,7 +17,7 @@ public class ListaExtratoActivity extends AppCompatActivity {
     private TextView mStatusView;
     private TextView mStatusAllView;
     private StatusTracker mStatusTracker = StatusTracker.getInstance();
-    public static final String CHAVE = "br.usjt.arqdesis.clientep1.chave";
+    public static final String CHAVE = "br.usjt.arqdesis.projetocaixaeletronico.chave";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

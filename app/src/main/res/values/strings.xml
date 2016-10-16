@@ -67,5 +67,16 @@
     <string name="title_activity_dialog">DialogActivity</string>
     <string name="title_activity_">Activity Lifecycle</string>
 
+    --detalhes do extrato----
+
+    <string name="label_tipo_operacao">--Tipo da Operação--</string>
+    <string name="label_data_operacao_detalhe">--data da Operação--</string>
+    <string name="label_codigo_cliente">Codigo Cliente</string>
+    <string name="label_agencia_destino">Agencia destino</string>
+    <string name="label_conta_destino">Conta destino</string>
+    <string name="label_valor_operacao">Valor</string>
+    <string name="label_data_operacao">Data</string>
+    <string name="label_numero_conta">Numero da Conta</string>
+    <string name="label_cod_movimento">Codigo do Movimento</string>
 
 </resources>

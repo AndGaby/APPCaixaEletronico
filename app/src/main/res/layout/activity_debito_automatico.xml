@@ -9,9 +9,4 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Controller.DebitoAutomaticoActivity">
 
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"></TableLayout>
 </RelativeLayout>

@@ -10,9 +10,9 @@
     tools:context=".Controller.ListaExtratoResultadoActivity">
     tools:context="arqdesis.usjt.br.projetoCaixaEletronico.listaExtratoResultado">
     <ListView
-        android:id="@+id/listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/Lista_extrato"
         android:fastScrollEnabled="true">
     </ListView>
 </LinearLayout>

@@ -23,7 +23,9 @@
         <activity android:name=".Controller.SaqueActivity" />
         <activity android:name=".Controller.OutrosValoresActivity" />
         <activity android:name=".Controller.DebitoAutomaticoActivity" />
-        <activity android:name=".Controller.TransferenciaActivity"></activity>
+        <activity android:name=".Controller.TransferenciaActivity" />
+        <activity android:name=".Controller.DetalheClienteActivity" />
+        <activity android:name=".Controller.DetalheExtratoActivity" />
     </application>
 
 </manifest>

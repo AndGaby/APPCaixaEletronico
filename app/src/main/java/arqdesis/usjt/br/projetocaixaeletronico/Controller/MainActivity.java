@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity
     private TextView mStatusAllView;
     private StatusTracker mStatusTracker = StatusTracker.getInstance();
 
-    public static final String CHAVE = "br.usjt.arqdesis.clientep1.chave";
+    public static final String CHAVE = "br.usjt.arqdesis.projetocaixaeletronico.chave";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
